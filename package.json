@@ -1,19 +1,17 @@
 {
-  "name": "translate_api",
+  "name": "translate-api",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node index.js",
+    "dev": "nodemon index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AbhiSri7/translate_api.git"
-  },
-  "author": "Abhishek Srivastav",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/AbhiSri7/translate_api/issues"
-  },
-  "homepage": "https://github.com/AbhiSri7/translate_api#readme"
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
 }

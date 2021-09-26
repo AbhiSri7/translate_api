@@ -1,0 +1,17 @@
+POST http://localhost:8500 
+Content-Type: application/json
+
+{
+    "to_trans" : "प्यारा",
+    "from": "hi",
+    "to": "en"
+}
+
+####
+
+GET http://localhost:8500
+Content-Type: application/json
+
+{
+    
+}

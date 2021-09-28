@@ -16,6 +16,13 @@ exports.trans = async (req, resp) => {
       // console.log(res);
       (await pool).query(`SELECT * FROM translate WHERE TEXT = ${JSON.stringify(to_trans)}`).then(async (result) => {
         console.log(result);
+        // RowDataPacket {
+        //   TEXT: 'Apple',
+        //   TRANS_TEXT: 'सेब',
+        //   FROM_LANG: 'en',
+        //   TO_LANG: 'hi',
+        //   ID: 8
+        // }
         if(result[0]) {
           console.log("Found cache\n");
           resp.json(result[0].TRANS_TEXT);

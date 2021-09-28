@@ -2,7 +2,7 @@ POST http://localhost:8500
 Content-Type: application/json
 
 {
-    "to_trans" : "Apple",
+    "to_trans" : "My name is Abhishek.",
     "from": "en",
     "to": "hi"
 }
